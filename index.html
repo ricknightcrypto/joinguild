@@ -1,1 +1,711 @@
-hellow
+<!doctype html>
+<html lang="en" class="overflow-x-hidden font-primary">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Guild">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preload" href="./assets/sprite.svg" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <link rel="stylesheet" href="build-tailwind.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="preload relative bg-black text-white overflow-x-hidden">
+    <figure class="back absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full">
+        <img class="absolute left-1/2 top-0 -translate-x-1/2 object-top w-full max-h-pattern h-full object-cover"
+            width="1440" height="6489" src="./assets/img/patern.svg" alt="bg">
+    </figure>
+    <header class="header relative container flex items-center justify-between py-18">
+        <figure class="header__logo max-w-logo w-full">
+            <img class="w-full h-auto" width="220" height="36" src="./assets/img/logo.svg" alt="logo">
+        </figure>
+        <div class="header__btn">
+            <a href="#calendar"
+                class="btn inline-flex items-center bg-primary text-black text-btn hover:bg-white transition px-4 md:px-6 py-3 md:py-4">Get
+                Started</a>
+        </div>
+    </header>
+    <main class="relative">
+        <section class="hero container relative  pt-12 mb-20 md:mb-24 z-10">
+            <figure class="hero__bg absolute top-0 left-0 w-full pointer-events-none">
+                <img class="w-full" width="1440" height="1232" src="./assets/img/hero-bg.svg" alt="hero bg">
+            </figure>
+            <div class="hero__title text-center max-w-title mx-auto relative">
+                <h1 class="text-h1">
+                    Learn The Exact Strategy We Will Use to  <mark
+                        class="bg-transparent text-white inline-block relative bg-line bg-no-repeat bg-bottom bg-contain">Reach
+                        7
+                        Figures</mark> in the
+                    Next Bull Market
+                </h1>
+            </div>
+            <div class="hero__btn mt-6  flex justify-center relative">
+                <a href="#calendar"
+                    class="btn inline-flex items-center bg-primary text-black text-btn hover:bg-white transition md:py-7 p-4  md:px-8 text-h5 font-medium leading-none">Get
+                    Started</a>
+            </div>
+            <div class="hero__video-wrapper relative max-w-video aspect-video mx-auto mt-11  sm:mt-16 "
+                data-video-wrapper>
+                <ul data-loader
+                    class="hero__loader bg-dark  absolute top-0 left-0 w-full h-full  p-4 sm:p-6 gap-4 flex flex-col justify-between z-10 bg-loader bg-400 animate-loader">
+                </ul>
+                <video width="400" muted playsinline loop
+                    class="absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  cursor-pointer">
+                    <data-src src="./assets/img/blossoms.mp4" type="video/mp4"></data-src>
+                    Your browser does not support HTML video.
+                </video>
+                <div
+                    class="video__play absolute top-0 left-0 w-full h-full flex items-center justify-center pointer-events-none transition">
+                    <svg width="921" height="518">
+                        <use href="./assets/sprite.svg#video"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section
+            class="reviews-slick  relative before:absolute before:content-[''] before:top-0 before:left-1/2 before:-translate-x-1/2 before:-translate-y-2/3 before:w-4/5  before:h-72 before:bg-circle before:opacity-50 my-20 md:my-24 ">
+            <div class="reviews-slick__slick reviews-slick__slick--right relative flex justify-center">
+                <div
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+                <div
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+                <div
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+                <div
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+                <div
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+                <div
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+            <div class="reviews-slick__slick reviews-slick__slick--left relative flex justify-center mt-4 sm:mt-8"
+                dir="rtl">
+                <div dir="ltr"
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+                <div dir="ltr"
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+                <div dir="ltr"
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+                <div dir="ltr"
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+                <div dir="ltr"
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+                <div dir="ltr"
+                    class="review p-4 sm:py-14 sm:px-8 bg-black border border-white mx-2 sm:mx-4 min-w-review max-w-review">
+                    <figure class="reviews-slick__avatar w-16 h-16 rounded-full overflow-hidden mx-auto">
+                        <img class="w-full h-full object-cover lazy" width="64" height="64"
+                            data-src="./assets/img/avatar.jpg" alt="avatar">
+                    </figure>
+                    <figure class="text-center">
+                        <blockquote class="text-h5 font-medium mt-6">
+                            Get this program while you can. This is the time, believe me. Hands down this is easily the
+                            best program out there.
+                        </blockquote>
+                        <figcaption class="text-copyright text-white50 block mt-6">Alena Ross — Guild Mastermind member
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+        <section class="text relative container my-20 md:mt-24 md:mb-32   md:pt-60 sm:pt-36 pt-28 k2:pt-96">
+            <figure class="text__bg absolute top-0 left-1/2 -translate-x-1/2 w-screen">
+                <img class="w-full lazy" width="1440" height="342" data-src="./assets/img/chart.svg" alt="chart">
+            </figure>
+            <div class="text__title max-w-2xl">
+                <h2 class="text-h2">What is the Guild Crypto Mastermind?</h2>
+            </div>
+            <div class="md:columns-2 gap-10 md:mt-14 mt-6">
+                <p class="text-h5 font-medium leading-relaxed">
+                    The Guild mastermind is a group of dedicated investors and professionals in crypto who are charting
+                    a path to 7 figures
+                    in the next bull market.
+                </p>
+                <p class="text-h5 font-medium leading-relaxed md:mt-0 mt-8">
+                    Inside the mastermind, we have years of combined experience investing in crypto markets, running
+                    hedge funds building
+                    cryptocurrencies and more.
+                </p>
+            </div>
+        </section>
+        <section class="flex-card container my-20 md:my-32 ">
+            <div class="flex-card__title text-center mb-9 md:mb-20">
+                <h2 class="text-h4">You will get access to:</h2>
+            </div>
+            <div class="flex-card__flex flex flex-wrap gap-5 md:gap-10 justify-center">
+                <div
+                    class="flex-card__card relative w-full md:w-2/4  flex items-center justify-center py-4 sm:py-11 px-4 lg:px-30 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="44" height="44" class="min-w-8 sm:min-w-11 max-w-8 sm:max-w-11 h-auto mr-4 sm:mr-5 lg:mr-8">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    <div class="w-full">
+                        <h3 class="text-h3">Our Easy to Follow Core Strategy</h3>
+                        <p class="text-h6 mt-3">
+                            So you can passively invest into the right crypto and know exactly when to take profits.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex-card__card relative w-full md:w-2/4  flex items-center justify-center py-4 sm:py-11 px-4 lg:px-30 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="44" height="44" class="min-w-8 sm:min-w-11 max-w-8 sm:max-w-11 h-auto mr-4 sm:mr-5 lg:mr-8">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    <div class="w-full">
+                        <h3 class="text-h3">100X Altcoins</h3>
+                        <p class="text-h6 mt-3">
+                            We offer access to top tier altcoins with 100x potential. We tirelessly research and vet
+                            projects to bring you the best
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex-card__card relative w-full md:w-2/4  flex items-center justify-center py-4 sm:py-11 px-4 lg:px-30 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="44" height="44" class="min-w-8 sm:min-w-11 max-w-8 sm:max-w-11 h-auto mr-4 sm:mr-5 lg:mr-8">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    <div class="w-full">
+                        <h3 class="text-h3">Pre-Sale Opportunities</h3>
+                        <p class="text-h6 mt-3">
+                            Early buyers make the most in crypto we will present mastermind members with opportunities
+                            to participate in quality
+                            pre-sales.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex-card__card relative w-full md:w-2/4  flex items-center justify-center py-4 sm:py-11 px-4 lg:px-30 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="44" height="44" class="min-w-8 sm:min-w-11 max-w-8 sm:max-w-11 h-auto mr-4 sm:mr-5 lg:mr-8">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    <div class="w-full">
+                        <h3 class="text-h3">Airdrop Farming</h3>
+                        <p class="text-h6 mt-3">
+                            There is potential to earn thousands, or even tens of thousands of dollars in airdrops
+                            across a number of different blockchains.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex-card__card relative w-full md:w-2/4  flex items-center justify-center py-4 sm:py-11 px-4 lg:px-30 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="44" height="44" class="min-w-8 sm:min-w-11 max-w-8 sm:max-w-11 h-auto mr-4 sm:mr-5 lg:mr-8">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    <div class="w-full">
+                        <h3 class="text-h3">Strong Network</h3>
+                        <p class="text-h6 mt-3">
+                            Celebrate wins and connect with high level crypto industry professionals, the perfect place
+                            to launch your own project
+                            or get in early on them
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex-card__card relative w-full md:w-2/4  flex items-center justify-center py-4 sm:py-11 px-4 lg:px-30 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="44" height="44" class="min-w-8 sm:min-w-11 max-w-8 sm:max-w-11 h-auto mr-4 sm:mr-5 lg:mr-8">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    <div class="w-full">
+                        <h3 class="text-h3">Weekly Group Calls</h3>
+                        <p class="text-h6 mt-3">
+                            The mastermind meets weekly to hear about interesting plays in the market, how people are
+                            running their portfolios,
+                            upcoming opportunities and more.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex-card__card relative w-full md:w-2/4  flex items-center justify-center py-4 sm:py-11 px-4 lg:px-30 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="44" height="44" class="min-w-8 sm:min-w-11 max-w-8 sm:max-w-11 h-auto mr-4 sm:mr-5 lg:mr-8">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    <div class="w-full">
+                        <h3 class="text-h3">Private Coaching</h3>
+                        <p class="text-h6 mt-3">
+                            Members who need personalized help or questions, are encouraged to DM leadership or any
+                            member of the team for direct,
+                            one on one assistance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tools my-20 md:mt-180 md:mb-150 container">
+            <div
+                class="tools__title mb-9 md:mb-76 text-center max-w-title mx-auto relative before:absolute before:content-[''] before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-150  before:h-150 before:bg-circle ">
+                <h2 class="text-h1">
+                    Get all the tools and knowledge you need to succeed investing in cryptocurrency
+                </h2>
+            </div>
+            <div class="tools__tools flex justify-center flex-wrap gap-4 sm:gap-6 max-w-small mx-auto">
+                <div
+                    class="tools__tool w-full sm:w-auto text-h5 flex items-center justify-center p-4 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="24" height="24" class="min-w-icon max-w-icon h-auto mr-2.5">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    Early access opportunities
+                </div>
+                <div
+                    class="tools__tool w-full sm:w-auto text-h5 flex items-center justify-center p-4 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="24" height="24" class="min-w-icon max-w-icon h-auto mr-2.5">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    Automated Software
+                </div>
+                <div
+                    class="tools__tool w-full sm:w-auto text-h5 flex items-center justify-center p-4 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="24" height="24" class="min-w-icon max-w-icon h-auto mr-2.5">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    Passive Strategy
+                </div>
+                <div
+                    class="tools__tool w-full sm:w-auto text-h5 flex items-center justify-center p-4 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="24" height="24" class="min-w-icon max-w-icon h-auto mr-2.5">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    A Strong Network
+                </div>
+                <div
+                    class="tools__tool w-full sm:w-auto text-h5 flex items-center justify-center p-4 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="24" height="24" class="min-w-icon max-w-icon h-auto mr-2.5">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    Unique Altcoin Picks
+                </div>
+                <div
+                    class="tools__tool w-full sm:w-auto text-h5 flex items-center justify-center p-4 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="24" height="24" class="min-w-icon max-w-icon h-auto mr-2.5">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    Close Knit Education
+                </div>
+                <div
+                    class="tools__tool w-full sm:w-auto text-h5 flex items-center justify-center p-4 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="24" height="24" class="min-w-icon max-w-icon h-auto mr-2.5">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    Pre-Sales
+                </div>
+                <div
+                    class="tools__tool w-full sm:w-auto text-h5 flex items-center justify-center p-4 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="24" height="24" class="min-w-icon max-w-icon h-auto mr-2.5">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    Market Analysis
+                </div>
+                <div
+                    class="tools__tool w-full sm:w-auto text-h5 flex items-center justify-center p-4 border border-gray bg-dark relative">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <svg width="24" height="24" class="min-w-icon max-w-icon h-auto mr-2.5">
+                        <use href="./assets/sprite.svg#tick"></use>
+                    </svg>
+                    Private Coaching
+                </div>
+            </div>
+            <div class="tools__btn mt-8 md:mt-66 flex justify-center">
+                <a href="#calendar"
+                    class="btn inline-flex items-center bg-primary text-black text-btn hover:bg-white transition md:py-7 p-4  md:px-8 text-h5 font-medium leading-none">Take
+                    Action</a>
+            </div>
+        </section>
+        <section id="calendar"
+            class="calendar container relative my-20 md:mb-180 md:mt-150 before:absolute before:content-[''] before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-75 before:translate-y-1/4 before:h-96 before:bg-circle2  before:opacity-50">
+            <div
+                class="calendar__title text-center max-w-4xl mx-auto relative before:absolute before:content-[''] before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:w-full  before:h-60 before:bg-circle ">
+                <h2 class="text-h2">Free private coaching and strategy call</h2>
+            </div>
+            <div class="calendar__calendar max-w-calendar min-h-calendar mx-auto relative mt-11  border border-gray before:absolute before:content-[''] before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:translate-y-1/2 before:w-full  before:h-96 before:bg-circle2 before:opacity-50"
+                data-calendar>
+                <div class="plus"></div>
+                <div class="plus plus--top-right"></div>
+                <div class="plus plus--bottom-right"></div>
+                <div class="plus plus--bottom-left"></div>
+                <ul data-loader
+                    class="calendar__loader absolute top-0 left-0 w-full h-full bg-dark bg-loader bg-400 animate-loader p-6 gap-6 flex flex-col justify-between">
+                </ul>
+                <iframe data-src="https://calendly.com/quickquote/applicationcall" ;
+                    style="width:100%; height:800px;border:0px;background-color:transparent;" frameborder="0"
+                    scrolling="no" allowtransparency="true" title="calendar"></iframe>
+            </div>
+        </section>
+        <section class="faq my-20 md:mt-180 md:mb-150 container">
+            <div class="fag__title mb-9 md:mb-66 text-center">
+                <h2 class="text-h2">Frequently Asked Questions</h2>
+            </div>
+            <div class="fag__accordions max-w-small mx-auto">
+                <div class="accordion relative border border-gray bg-dark mt-10px">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <input class="hidden" type="radio" id="ac1" name="faq">
+                    <label class="accordion__head py-18 cursor-pointer text-h5  px-4  flex items-center justify-between"
+                        for="ac1">
+                        What sort of time commitment do I need to make after I join?
+                        <span class="block ml-2">
+                            <svg width="22" height="23" class="min-w-icon max-w-icon h-auto transition-all">
+                                <use href="./assets/sprite.svg#accordion"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <div
+                        class="accordion__content grid overflow-hidden grid-rows-hide transition-all duration-500  px-4 lg:pr-12">
+                        <div class="min-h-0 text-p ">
+                            We implement strategies that give you the highest return on your time. Much of what we do
+                            can be passively managed for
+                            less than 3 hours per week. For more enterprising investors, there are plenty of
+                            opportunities that could easily exceed
+                            10-15 hours a week. This includes manual airdrop farming, investing in pre-sales and diving
+                            into specific altcoin plays.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion relative border border-gray bg-dark mt-10px">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <input class="hidden" type="radio" id="ac2" name="faq">
+                    <label class="accordion__head py-18 cursor-pointer text-h5  px-4  flex items-center justify-between"
+                        for="ac2">
+                        I only have a few thousand dollars to invest in crypto, is this program right for me?
+                        <span class="block ml-2">
+                            <svg width="22" height="23" class="min-w-icon max-w-icon h-auto transition-all">
+                                <use href="./assets/sprite.svg#accordion"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <div
+                        class="accordion__content grid overflow-hidden grid-rows-hide transition-all duration-500  px-4 lg:pr-12">
+                        <div class="min-h-0 text-p">
+                            We implement strategies that give you the highest return on your time. Much of what we do
+                            can be passively managed for
+                            less than 3 hours per week. For more enterprising investors, there are plenty of
+                            opportunities that could easily exceed
+                            10-15 hours a week. This includes manual airdrop farming, investing in pre-sales and diving
+                            into specific altcoin plays.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion relative border border-gray bg-dark mt-10px">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <input class="hidden" type="radio" id="ac3" name="faq">
+                    <label class="accordion__head py-18 cursor-pointer text-h5  px-4  flex items-center justify-between"
+                        for="ac3">
+                        How much do I need to reach 7 figures in this bull market?
+                        <span class="block ml-2">
+                            <svg width="22" height="23" class="min-w-icon max-w-icon h-auto transition-all">
+                                <use href="./assets/sprite.svg#accordion"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <div
+                        class="accordion__content grid overflow-hidden grid-rows-hide transition-all duration-500  px-4 lg:pr-12">
+                        <div class="min-h-0 text-p">
+                            We implement strategies that give you the highest return on your time. Much of what we do
+                            can be passively managed for
+                            less than 3 hours per week. For more enterprising investors, there are plenty of
+                            opportunities that could easily exceed
+                            10-15 hours a week. This includes manual airdrop farming, investing in pre-sales and diving
+                            into specific altcoin plays.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion relative border border-gray bg-dark mt-10px">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <input class="hidden" type="radio" id="ac4" name="faq">
+                    <label class="accordion__head py-18 cursor-pointer text-h5  px-4  flex items-center justify-between"
+                        for="ac4">
+                        Will you teach me how to trade?
+                        <span class="block ml-2">
+                            <svg width="22" height="23" class="min-w-icon max-w-icon h-auto transition-all">
+                                <use href="./assets/sprite.svg#accordion"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <div
+                        class="accordion__content grid overflow-hidden grid-rows-hide transition-all duration-500  px-4 lg:pr-12">
+                        <div class="min-h-0 text-p">
+                            We implement strategies that give you the highest return on your time. Much of what we do
+                            can be passively managed for
+                            less than 3 hours per week. For more enterprising investors, there are plenty of
+                            opportunities that could easily exceed
+                            10-15 hours a week. This includes manual airdrop farming, investing in pre-sales and diving
+                            into specific altcoin plays.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion relative border border-gray bg-dark mt-10px">
+                    <div class="plus"></div>
+                    <div class="plus plus--top-right"></div>
+                    <div class="plus plus--bottom-right"></div>
+                    <div class="plus plus--bottom-left"></div>
+                    <input class="hidden" type="radio" id="ac5" name="faq">
+                    <label class="accordion__head py-18 cursor-pointer text-h5  px-4  flex items-center justify-between"
+                        for="ac5">
+                        How do I know if the mastermind is right for me?
+                        <span class="block ml-2">
+                            <svg width="22" height="23" class="min-w-icon max-w-icon h-auto transition-all">
+                                <use href="./assets/sprite.svg#accordion"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <div
+                        class="accordion__content grid overflow-hidden grid-rows-hide transition-all duration-500  px-4 lg:pr-12">
+                        <div class="min-h-0 text-p">
+                            We implement strategies that give you the highest return on your time. Much of what we do
+                            can be passively managed for
+                            less than 3 hours per week. For more enterprising investors, there are plenty of
+                            opportunities that could easily exceed
+                            10-15 hours a week. This includes manual airdrop farming, investing in pre-sales and diving
+                            into specific altcoin plays.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" relative container  px-footerX   flex ">
+        <div class="w-full py-footerY border-t border-white flex flex-col sm:flex-row items-center justify-between">
+            <figure class="header__logo max-w-logo w-full">
+                <img class="w-full h-auto lazy" width="220" height="36" data-src="./assets/img/logo.svg" alt="logo">
+            </figure>
+            <p
+                class="text-white20 text-copyright text-center py-6 sm:py-0 sm:absolute sm:left-1/2 sm:top-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2">
+                All rights reserved. 2023.</p>
+            <div class="header__btn">
+                <a href="#calendar"
+                    class="btn inline-flex items-center bg-primary text-black text-btn hover:bg-white transition px-6 py-4">Get
+                    Started</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
