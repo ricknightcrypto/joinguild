@@ -18,10 +18,3 @@ npm install
 npm build
 npm tailwind-build
 ```
-
-## Useful info
-The below the list of useful links(docs, services we could use in the project etc.)
-
-| Service | Link |
-| ------ | ------ |
-| README editor | [Dillinger.io](https://dillinger.io/)|
